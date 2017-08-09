@@ -78,13 +78,19 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/MHToolMall.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/hengyangKing/MHToolMall.git", :tag => "#{s.version}" }
   s.subspec 'MHTopWindow' do |w|
       w.source_files = "Classes", "Classes/MHTopWindow/**/*.{h,m}"
 
   end
   s.subspec 'MHAVFormatShop' do |form|
       form.source_files = "Classes", "Classes/MHAVFormatShop/**/*.{h,m}"
+      form.framework  = "AVFoundation"
+      form.dependency "KingBase", "~> 0.0.5"
+      form.dependency "KingBaseCategory/NSDate+"
+      form.dependency "KingBaseCategory/NSFileManager+"
+
+
   end
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -1,0 +1,46 @@
+{
+  "name": "MHToolMall",
+  "version": "0.0.1",
+  "summary": "Provide tools for musichome.",
+  "description": "Provide tools for musichome",
+  "homepage": "https://github.com/hengyangKing/MHToolMall",
+  "license": "MIT",
+  "authors": {
+    "hengyangKing": "hengyangKing.yeah.net"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/hengyangKing/MHToolMall.git",
+    "tag": "0.0.1"
+  },
+  "subspecs": [
+    {
+      "name": "MHTopWindow",
+      "source_files": [
+        "Classes",
+        "Classes/MHTopWindow/**/*.{h,m}"
+      ]
+    },
+    {
+      "name": "MHAVFormatShop",
+      "source_files": [
+        "Classes",
+        "Classes/MHAVFormatShop/**/*.{h,m}"
+      ],
+      "frameworks": "AVFoundation",
+      "dependencies": {
+        "KingBase": [
+          "~> 0.0.5"
+        ],
+        "KingBaseCategory/NSDate+": [
+
+        ],
+        "KingBaseCategory/NSFileManager+": [
+
+        ]
+      }
+    }
+  ]
+}

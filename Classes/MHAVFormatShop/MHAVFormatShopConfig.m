@@ -9,8 +9,7 @@
 #import "MHAVFormatShopConfig.h"
 #import "NSDate+MHDateExtension.h"
 #import "NSFileManager+MHFilePath.h"
-#define  FILEMANAGER [NSFileManager defaultManager]
-
+#import "MHBase.h"
 @interface MHAVFormatShopConfig()
 @end
 @implementation MHAVFormatShopConfig
@@ -64,7 +63,7 @@
         
         NSString *name=(fileName.length)?fileName:kSmallMovieFile;
         
-        [self setOutputPathURL:[NSURL fileURLWithPath:[[FILEMANAGER getSmallMovieFilePath] stringByAppendingPathComponent:name]]];
+        [self setOutputPathURL:[NSURL fileURLWithPath:[[JHYFILEMANAGER getSmallMovieFilePath] stringByAppendingPathComponent:name]]];
         
         return self;
     };
