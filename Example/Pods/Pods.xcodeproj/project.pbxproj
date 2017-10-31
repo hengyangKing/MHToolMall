@@ -95,23 +95,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00CD08A6B09777D8EEDCF3D4DE87559A /* KingBaseCategory.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KingBaseCategory.modulemap; sourceTree = "<group>"; };
+		00CD08A6B09777D8EEDCF3D4DE87559A /* KingBaseCategory.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KingBaseCategory.modulemap; sourceTree = "<group>"; };
 		01E6907CF2644EB1CF8E23F708A3DA0B /* Pods-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-resources.sh"; sourceTree = "<group>"; };
 		03881DD06814C2DE0367DD11C060E038 /* KingBaseCategory-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KingBaseCategory-prefix.pch"; sourceTree = "<group>"; };
 		04AC94611EEA755DC866F2FB51E232D5 /* NSFileManager+MHDeleteFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+MHDeleteFile.h"; path = "Classes/NSFileManager/NSFileManager+MHDeleteFile.h"; sourceTree = "<group>"; };
 		062AE5C2F4EFEFC15BC6F9B6DBB4122A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06FC2F4524905F4122F827B7C01E31DE /* NSDate+MHSingleMark.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+MHSingleMark.h"; path = "Classes/NSDate/NSDate+MHSingleMark.h"; sourceTree = "<group>"; };
 		0FDD09EF2088CA6089964FE4C408BBCD /* MHAVFormatShop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MHAVFormatShop.h; sourceTree = "<group>"; };
-		119072C64A19799964E1620D83F514FB /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
+		119072C64A19799964E1620D83F514FB /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
 		149054C495E8EC590CAB4C524133016F /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1B8BF90118E7D818E0F1071DB43D7681 /* KingBase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KingBase-prefix.pch"; sourceTree = "<group>"; };
-		20842C94E07A02A547745EB985D3A88D /* KingBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KingBase.framework; path = KingBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22941E2E9675208AE96905CD5EFDC755 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20842C94E07A02A547745EB985D3A88D /* KingBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KingBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22941E2E9675208AE96905CD5EFDC755 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		246C62C9F48C6165F1006E711EBF3BBD /* NSFileManager+MHFilePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+MHFilePath.h"; path = "Classes/NSFileManager/NSFileManager+MHFilePath.h"; sourceTree = "<group>"; };
 		281C1F3C84B4C64C2C452C1A41CAD649 /* NSFileManager+MHFileSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+MHFileSize.h"; path = "Classes/NSFileManager/NSFileManager+MHFileSize.h"; sourceTree = "<group>"; };
 		2B82F9B018DC52DD85D15F76FCCF2B2D /* KingBase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KingBase-umbrella.h"; sourceTree = "<group>"; };
 		2B8CD075CEBCB66E99F906E4225F2F7A /* NSFileManager+MHImagePickerTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+MHImagePickerTools.h"; path = "Classes/NSFileManager/NSFileManager+MHImagePickerTools.h"; sourceTree = "<group>"; };
-		2E91CC93A9F4E56E4CC61026137AC103 /* MHToolMall.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MHToolMall.modulemap; sourceTree = "<group>"; };
+		2E91CC93A9F4E56E4CC61026137AC103 /* MHToolMall.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MHToolMall.modulemap; sourceTree = "<group>"; };
 		38EEFB9BEB4CCD18F6F42ECCCB625BAB /* NSFileManager+MHDeleteFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+MHDeleteFile.m"; path = "Classes/NSFileManager/NSFileManager+MHDeleteFile.m"; sourceTree = "<group>"; };
 		38F4CC26270F7536B02FA83BA2228849 /* KingBase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KingBase-dummy.m"; sourceTree = "<group>"; };
 		3AC2C00E998E0D6E6801985B28B68543 /* NSFileManager+MHAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+MHAccount.h"; path = "Classes/NSFileManager/NSFileManager+MHAccount.h"; sourceTree = "<group>"; };
@@ -129,12 +129,12 @@
 		7FE987B8790E43758C685A0C5C649B3E /* NSFileManager+MHReduceVideoPlistTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+MHReduceVideoPlistTools.m"; path = "Classes/NSFileManager/NSFileManager+MHReduceVideoPlistTools.m"; sourceTree = "<group>"; };
 		866EF8B668C981D6DB5B30264ED55337 /* MHToolMall.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MHToolMall.xcconfig; sourceTree = "<group>"; };
 		86C16AF7FF1AB11E840BF3519B24559A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8958CCF2B2616BAB24EE85E6521B9E20 /* KingBase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KingBase.modulemap; sourceTree = "<group>"; };
+		8958CCF2B2616BAB24EE85E6521B9E20 /* KingBase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KingBase.modulemap; sourceTree = "<group>"; };
 		8B01A8710C7EFAC1AC61C5B53F1996BE /* NSFileManager+MHFileHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+MHFileHelper.h"; path = "Classes/NSFileManager/NSFileManager+MHFileHelper.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		955E6F0C8D2FBDAE2B113682B3D8BFDD /* MHTopRootController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MHTopRootController.h; sourceTree = "<group>"; };
 		98EBE778F2A68976900BE1D7BF8B3BA0 /* NSFileManager+MHFilePath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+MHFilePath.m"; path = "Classes/NSFileManager/NSFileManager+MHFilePath.m"; sourceTree = "<group>"; };
-		9986D15307233911A1B041F44C30EF98 /* MHToolMall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MHToolMall.framework; path = MHToolMall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9986D15307233911A1B041F44C30EF98 /* MHToolMall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MHToolMall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EB74D76ED690F9CF7C34656AE15F08 /* KingBaseCategory.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KingBaseCategory.xcconfig; sourceTree = "<group>"; };
 		9F4ABA500F1C2B1C3EFC4089AFE20776 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		A059EA11062E4DF7F779EA94C453281E /* MHConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MHConst.m; path = Classes/Base/MHConst.m; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 		EFFB74AAA6B2AE8DABF0E88E61E09178 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F480397A1BCC6670FA11B51ACA492F17 /* KingBaseCategory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KingBaseCategory-dummy.m"; sourceTree = "<group>"; };
 		F73D12D9A1EB05A179A2771C027A036C /* MHTopRootController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MHTopRootController.m; sourceTree = "<group>"; };
-		FA5652339BB64111517BDE6BDACDEADF /* KingBaseCategory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KingBaseCategory.framework; path = KingBaseCategory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5652339BB64111517BDE6BDACDEADF /* KingBaseCategory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KingBaseCategory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,7 +243,6 @@
 				CB2D3882DE2E5D4C6D0DEB13B02A4880 /* NSFileManager+ */,
 				B4CD9B45E77A91F39CAAA1CEE266E8AE /* Support Files */,
 			);
-			name = KingBaseCategory;
 			path = KingBaseCategory;
 			sourceTree = "<group>";
 		};
@@ -266,7 +265,6 @@
 				EF8C970EB1AFAD2CBE8FA2A54EFDADA2 /* MHTopWindow.h */,
 				4BDE5577FF5C8D795CF0A3A0755075E9 /* MHTopWindow.m */,
 			);
-			name = MHTopWindow;
 			path = MHTopWindow;
 			sourceTree = "<group>";
 		};
@@ -275,7 +273,6 @@
 			children = (
 				50DF18BB0D5FD6F145A654280EE64C00 /* MHTopWindow */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -336,7 +333,6 @@
 				421A20EC4184AB0984B18A0A920B6133 /* MHAVFormatShopConfig.h */,
 				D1B683363657CFD5507969852ED2B64C /* MHAVFormatShopConfig.m */,
 			);
-			name = MHAVFormatShop;
 			path = MHAVFormatShop;
 			sourceTree = "<group>";
 		};
@@ -424,7 +420,6 @@
 			children = (
 				9790164E5971DB2B223C695CFCECB2C2 /* MHAVFormatShop */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -437,7 +432,6 @@
 				483ECC7F7E02B49F4CFD75FBB20F7976 /* MHSington.h */,
 				CDCFE04BD63F3FC3391B4EF8A62DC4E2 /* Support Files */,
 			);
-			name = KingBase;
 			path = KingBase;
 			sourceTree = "<group>";
 		};
@@ -594,7 +588,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -842,7 +836,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -850,15 +846,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -986,7 +988,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -994,14 +998,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
