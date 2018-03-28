@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
   s.subspec 'MHAVFormatShop' do |form|
       form.source_files = "Classes", "Classes/MHAVFormatShop/**/*.{h,m}"
       form.framework  = "AVFoundation"
-      form.dependency "KingBase", "~> 0.0.5"
+      form.dependency "MHBaseConst"
       form.dependency "KingBaseCategory/NSDate+"
       form.dependency "KingBaseCategory/NSFileManager+"
 
