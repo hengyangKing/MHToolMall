@@ -1,8 +1,8 @@
 {
   "name": "MHToolMall",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "summary": "Provide tools for musichome.",
-  "description": "Provide tools for musichome",
+  "description": "Provide tools for the musichome",
   "homepage": "https://github.com/hengyangKing/MHToolMall",
   "license": "MIT",
   "authors": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hengyangKing/MHToolMall.git",
-    "tag": "0.0.1"
+    "tag": "0.0.3"
   },
   "subspecs": [
     {
@@ -31,8 +31,8 @@
       ],
       "frameworks": "AVFoundation",
       "dependencies": {
-        "KingBase": [
-          "~> 0.0.5"
+        "MHBaseConst": [
+
         ],
         "KingBaseCategory/NSDate+": [
 
