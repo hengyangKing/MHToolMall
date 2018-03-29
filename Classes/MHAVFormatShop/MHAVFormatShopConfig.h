@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 @interface MHAVFormatShopConfig : NSObject
+
+@property(nonatomic,strong,readonly)NSURL *outputPathURL;
+
 @property(nonatomic,strong,readonly)AVURLAsset *asset;
 
 @property(nonatomic,copy,readonly)NSString *presetName;
-
-@property(nonatomic,strong,readonly)NSURL *outputPathURL;
 
 @property(nonatomic,copy,readonly)NSString *outputFileType;
 
@@ -22,9 +23,10 @@
 
 @property(nonatomic,copy,readonly)MHAVFormatShopConfig *(^MHAVFormatShopPresetName)(NSString *presetName);
 
-@property(nonatomic,copy,readonly)MHAVFormatShopConfig *(^MHAVFormatShopOutputFileName)(NSString *outputFileName);
-
 @property(nonatomic,copy,readonly)MHAVFormatShopConfig *(^MHAVFormatShopOutputFileType)(NSString *outputFileType);
+
+@property(nonatomic,copy,readonly)MHAVFormatShopConfig *(^MHAVFormatShopOutputFilePath)(NSString *outputFilePath);
+
 
 +(MHAVFormatShopConfig *)defaultConfig;
 

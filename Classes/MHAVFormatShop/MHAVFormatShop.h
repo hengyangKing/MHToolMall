@@ -25,5 +25,5 @@
  @param completion 成功回调
  @param failed 失败回调
  */
--(void)exportAVURLAssetWithConfig:(void (^)(MHAVFormatShopConfig *config))config andProgress:(void (^)(float progress))progress andCompletion:(void (^)(MHAVFormatShopConfig *config))completion andFailed:(void (^)())failed;
+-(void)exportAVURLAssetWithConfig:(void (^)(MHAVFormatShopConfig *config))config andProgress:(void (^)(float progress))progress andCompletion:(void (^)(MHAVFormatShopConfig *config))completion andFailed:(void (^)(void))failed;
 @end

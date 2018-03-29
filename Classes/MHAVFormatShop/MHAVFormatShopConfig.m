@@ -13,12 +13,11 @@
 @interface MHAVFormatShopConfig()
 @end
 @implementation MHAVFormatShopConfig
-+(MHAVFormatShopConfig *)defaultConfig
-{
++(MHAVFormatShopConfig *)defaultConfig {
     MHAVFormatShopConfig *config=[[MHAVFormatShopConfig alloc]init];
     config.MHAVFormatShopOutputFileType(AVFileTypeMPEG4);
     config.MHAVFormatShopPresetName(AVAssetExportPresetMediumQuality);
-    config.MHAVFormatShopOutputFileName(kSmallMovieFile);
+    config.MHAVFormatShopOutputFilePath([[JHYFILEMANAGER getSmallMovieFilePath] stringByAppendingPathComponent:kSmallMovieFile]);
     
     return config;
 }
@@ -39,8 +38,7 @@
     _outputFileType=outputFileType;
 }
 
--(MHAVFormatShopConfig *(^)(AVURLAsset *))MHAVFormatShopAsset
-{
+-(MHAVFormatShopConfig *(^)(AVURLAsset *))MHAVFormatShopAsset {
     return ^(AVURLAsset *asset){
         if (asset) {
             self.asset=asset;
@@ -48,8 +46,7 @@
         return self;
     };
 }
--(MHAVFormatShopConfig *(^)(NSString *))MHAVFormatShopPresetName
-{
+-(MHAVFormatShopConfig *(^)(NSString *))MHAVFormatShopPresetName {
     return ^(NSString *presetName){
         if (presetName.length) {
             self.presetName=presetName;
@@ -57,14 +54,10 @@
         return self;
     };
 }
--(MHAVFormatShopConfig *(^)(NSString *))MHAVFormatShopOutputFileName
-{
-    return ^(NSString *fileName){
+-(MHAVFormatShopConfig *(^)(NSString *))MHAVFormatShopOutputFilePath {
+    return ^(NSString *path){
         
-        NSString *name=(fileName.length)?fileName:kSmallMovieFile;
-        
-        [self setOutputPathURL:[NSURL fileURLWithPath:[[JHYFILEMANAGER getSmallMovieFilePath] stringByAppendingPathComponent:name]]];
-        
+        path.length?[self setOutputPathURL:[NSURL fileURLWithPath:path]]:NSLog(@"%@", [NSString stringWithFormat:@"路径为空 该实力存储于%@",self.outputPathURL.absoluteString]);
         return self;
     };
 }

@@ -8,14 +8,12 @@
 
 #import "MHAVFormatShop.h"
 @interface MHAVFormatShop()
-{
-    AVAssetExportSession *_exportSession;
-}
 
 /**
  *  计时器
  */
 @property(nonatomic,strong)CADisplayLink *linkTimer;
+@property(nonatomic,strong)AVAssetExportSession *exportSession;
 @property(nonatomic,copy)void (^progressBlcok)(float progress);
 
 @end
@@ -39,65 +37,54 @@
     }
     return _linkTimer;
 }
--(void)exportAVURLAssetWithConfig:(void (^)(MHAVFormatShopConfig *config))config andProgress:(void (^)(float progress))progress andCompletion:(void (^)(MHAVFormatShopConfig *config))completion andFailed:(void (^)())failed
-{
+-(void)exportAVURLAssetWithConfig:(void (^)(MHAVFormatShopConfig *config))config andProgress:(void (^)(float progress))progress andCompletion:(void (^)(MHAVFormatShopConfig *config))completion andFailed:(void (^)(void))failed {
     [self setProgressBlcok:progress];
     if (config) {
         MHAVFormatShopConfig *exportConfig=[MHAVFormatShopConfig defaultConfig];
         config(exportConfig);
         
         if (!exportConfig.asset) {
-            if (failed) {
-                failed();
-            }
+            !failed?:failed();
             return;
         }
         
         AVURLAsset* myAsset=exportConfig.asset;
         NSArray *compatiblePresets = [AVAssetExportSession exportPresetsCompatibleWithAsset:myAsset];
         if ([compatiblePresets containsObject:exportConfig.presetName]) {
-            _exportSession=[[AVAssetExportSession alloc] initWithAsset:myAsset presetName:exportConfig.presetName];
+            self.exportSession=[[AVAssetExportSession alloc] initWithAsset:myAsset presetName:exportConfig.presetName];
             
-            _exportSession.outputURL = exportConfig.outputPathURL;
-            _exportSession.outputFileType = exportConfig.outputFileType;
-            _exportSession.shouldOptimizeForNetworkUse = YES;
+            self.exportSession.outputURL = exportConfig.outputPathURL;
+            self.exportSession.outputFileType = exportConfig.outputFileType;
+            self.exportSession.shouldOptimizeForNetworkUse = YES;
             
             // 关闭定时器
-            [self.linkTimer invalidate];
-            _linkTimer=nil;
+            [self deallocTime];
             [self.linkTimer setPaused:NO];
-
+            
+            __weak typeof(self) weakself = self;
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                [_exportSession exportAsynchronouslyWithCompletionHandler:^(void) {
-                    switch (_exportSession.status) {
+                [weakself.exportSession exportAsynchronouslyWithCompletionHandler:^(void) {
+                    switch (weakself.exportSession.status) {
                         case AVAssetExportSessionStatusUnknown:
                             NSLog(@"AVAssetExportSessionStatusUnknown");
-                            [self.linkTimer invalidate];
-                            _linkTimer=nil;
+                            [weakself deallocTime];
                             break;
                         case AVAssetExportSessionStatusWaiting:
                             NSLog(@"AVAssetExportSessionStatusWaiting"); break;
                         case AVAssetExportSessionStatusExporting:
                             NSLog(@"AVAssetExportSessionStatusExporting");
-                            [self.linkTimer invalidate];
-                            _linkTimer=nil;
+                            [weakself deallocTime];
                             break;
                             
                         case AVAssetExportSessionStatusCompleted:
                             NSLog(@"AVAssetExportSessionStatusCompleted");
-                            [self.linkTimer invalidate];
-                            _linkTimer=nil;
-                            if (completion) {
-                                completion(exportConfig);
-                            }
+                            [weakself deallocTime];
+                            !completion?:completion(exportConfig);
                             break;
                         case AVAssetExportSessionStatusFailed:
                             NSLog(@"AVAssetExportSessionStatusFailed");
-                            [self.linkTimer invalidate];
-                            _linkTimer=nil;
-                            if (failed){
-                                failed();
-                            }
+                            [weakself deallocTime];
+                            !failed?:failed();
                             break;
                         default: break;
                     }
@@ -114,10 +101,14 @@
         }
     }
 }
+-(void)deallocTime {
+    [self.linkTimer invalidate];
+    self.linkTimer=nil;
+}
 -(void)timerAction{
     
     if (self.progressBlcok) {
-        self.progressBlcok(_exportSession.progress);
+        self.progressBlcok(self.exportSession.progress);
     }
 }
 @end

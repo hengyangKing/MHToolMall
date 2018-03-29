@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "MHToolMall"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Provide tools for musichome."
 
   s.description  = "Provide tools for the musichome"
