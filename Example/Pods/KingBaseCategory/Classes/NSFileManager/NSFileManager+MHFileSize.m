@@ -17,7 +17,8 @@
 -(BOOL)recordingVideoFileIsOverflow:(float (^)(void))maxsize
 {
     NSString *filePath=[[self getSaveMovieFileURL]absoluteString];
-    if ([self fileExistsAtPath:filePath]) {
+    if ([self fileExistsAtPath:filePath])
+    {
         unsigned long long f=[[self attributesOfItemAtPath:filePath error:nil] fileSize];
         float fileSize=f/1024.0/1024.0;
         if (maxsize) {
@@ -37,7 +38,8 @@
     
     NSString *filePath=[[self getSaveRecorderPath]absoluteString];
     
-    if ([self fileExistsAtPath:filePath]) {
+    if ([self fileExistsAtPath:filePath])
+    {
         unsigned long long f=[[self attributesOfItemAtPath:filePath error:nil] fileSize];
         float fileSize=f/1024.0/1024.0;
         if (maxsize) {
@@ -55,7 +57,7 @@
 {
     NSString *outputPath=[[self getSmallMovieFilePath] stringByAppendingPathComponent:fileName];
     
-    if ([self fileExistsAtPath:outputPath]) {
+    if ([self fileExistsAtPath:outputPath]){
         unsigned long long f=[[self attributesOfItemAtPath:outputPath error:nil] fileSize];
         
         float fileSize=f/1024.0/1024.0;

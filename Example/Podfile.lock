@@ -1,16 +1,16 @@
 PODS:
-  - KingBaseCategory/NSDate+ (0.3.6)
-  - KingBaseCategory/NSFileManager+ (0.3.6):
+  - KingBaseCategory/NSDate+ (0.4.2)
+  - KingBaseCategory/NSFileManager+ (0.4.2):
     - KingBaseCategory/NSDate+
   - MHBaseConst (0.0.5)
-  - MHToolMall (0.0.3):
-    - MHToolMall/MHAVFormatShop (= 0.0.3)
-    - MHToolMall/MHTopWindow (= 0.0.3)
-  - MHToolMall/MHAVFormatShop (0.0.3):
+  - MHToolMall (0.0.4):
+    - MHToolMall/MHAVFormatShop (= 0.0.4)
+    - MHToolMall/MHTopWindow (= 0.0.4)
+  - MHToolMall/MHAVFormatShop (0.0.4):
     - KingBaseCategory/NSDate+
     - KingBaseCategory/NSFileManager+
     - MHBaseConst
-  - MHToolMall/MHTopWindow (0.0.3)
+  - MHToolMall/MHTopWindow (0.0.4)
 
 DEPENDENCIES:
   - MHToolMall (from `../`)
@@ -20,9 +20,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  KingBaseCategory: 740be21ede05872861c019979f0854ffac5cae8c
+  KingBaseCategory: f116f7169ab6fcae29f16bcaa08089f2e28dbd6a
   MHBaseConst: 3fcac0b58a2b3b3c81cf0380de3b0c6a775047e6
-  MHToolMall: d61585dd0b83ecdeeffda752b1e851b0b0c80124
+  MHToolMall: d399c317835b4a9132b8fe9f1b28b476e7ce2895
 
 PODFILE CHECKSUM: 479965dfd23e4346b891cae5f5ad8161c4d70f33
 

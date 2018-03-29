@@ -1,6 +1,6 @@
 {
   "name": "MHToolMall",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "summary": "Provide tools for musichome.",
   "description": "Provide tools for the musichome",
   "homepage": "https://github.com/hengyangKing/MHToolMall",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/hengyangKing/MHToolMall.git",
-    "tag": "0.0.3"
+    "tag": "0.0.4"
   },
   "subspecs": [
     {

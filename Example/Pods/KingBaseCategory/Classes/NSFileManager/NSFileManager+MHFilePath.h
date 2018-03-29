@@ -39,13 +39,10 @@
  */
 -(NSString *)getSmallMovieFilePath;
 
-
-
 /**
  得到存储从apple music 映射到本地 的文件夹路径
-
+ 
  */
 -(NSString *)getIpodFilePath;
-
 
 @end

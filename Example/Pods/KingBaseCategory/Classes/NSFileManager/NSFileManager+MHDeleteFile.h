@@ -25,14 +25,10 @@
  */
 -(BOOL)deleteRecordVideoFile;
 
-
-
 /**
  删除用户映射到本地的音频文件
  */
 -(BOOL)deleteIpodCachesFiles;
-
-
 /**
  删除web缓存
  */

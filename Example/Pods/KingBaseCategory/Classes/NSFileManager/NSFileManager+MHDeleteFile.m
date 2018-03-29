@@ -28,15 +28,16 @@
     return [self deleteFile:filePath];
 }
 -(BOOL)deleteIpodCachesFiles {
-   return [self deleteFile:[self getIpodFilePath]];
+    return [self deleteFile:[self getIpodFilePath]];
 }
--(void)clearWebCache {
+-(void)clearWebCache
+{
     
     if (@available(iOS 9.0, *)) {
         [[WKWebsiteDataStore defaultDataStore] removeDataOfTypes:[WKWebsiteDataStore allWebsiteDataTypes] modifiedSince:[NSDate dateWithTimeIntervalSince1970:0] completionHandler:^{
             
         }];
-
+        
     } else {
         NSString *libraryDir = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,
                                                                    NSUserDomainMask, YES)[0];

@@ -9,7 +9,7 @@
 #import "NSFileManager+MHFilePath.h"
 #import "NSFileManager+MHFileHelper.h"
 @implementation NSFileManager (MHFilePath)
--(NSURL *)getSaveRecorderPath {
+-(NSURL *)getSaveRecorderPath{
     
     NSString *path=[self getMusicHomeCachePath];
     NSString *filePath=[NSString stringWithFormat:@"%@/MusicHomeRecorder/",path];
@@ -19,7 +19,8 @@
     return url;
 }
 
--(NSURL *)getSaveMovieFileURL {
+-(NSURL *)getSaveMovieFileURL
+{
     NSString *path=[self getMusicHomeCachePath];
     
     NSString *filePath=[NSString stringWithFormat:@"%@/MusicHomeMovie/",path];
@@ -28,19 +29,21 @@
     return [NSURL fileURLWithPath:filePath];
 }
 
--(NSString *)getSmallMovieFilePath {
+-(NSString *)getSmallMovieFilePath;
+{
     NSString *path=[self getMusicHomeCachePath];
     NSString *filePath=[NSString stringWithFormat:@"%@/MusicHomeSmallMovie/",path];
     [self hasLive:filePath];
     return filePath;
     
 }
+
 -(NSString *)getIpodFilePath {
     NSString *path=[self getMusicHomeCachePath];
     NSString *filePath=[NSString stringWithFormat:@"%@/IpodCaches/",path];
     [self hasLive:filePath];
     return filePath;
-
+    
 }
 
 @end
